@@ -8,14 +8,15 @@ def get_numbers_ticket(min, max, quantity):
         return list
     else:
         while len(list) < quantity:
+# generate a random int number from the specified range
             a = random.randint(min,max)
 # uniqueness check
             if a not in list:
 # add unique random int number in the list
-                list.append(random.randint(min,max))
+                list.append(a)
 # sort list
         list.sort()
         print(list)
         return list
 
-get_numbers_ticket(0,50,6)
+get_numbers_ticket(1,50,6)
